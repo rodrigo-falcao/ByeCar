@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bye Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/dnc.png" alt="logo da escola DNC">
+        <h1>ByeCar</h1>
+    </header>
+
+    <main>
+        <div class="descLeft">
+            <h4>Ter <strong>uma moto</strong> por assinatura nunca foi tão fácil!</h4>
+            <img src="./assets/img/image 1.png" alt="">
+        </div>
+
+        <div class="descRight">
+
+            <div>
+                <h4>Conheça nossas motos!</h4>
+            </div>
+
+            <div class="carrossel">
+                <button id="leftButton" onclick="leftButtonClick()"><img src="./assets/img/VectorLeft.png" alt="botao para esquerda"></button>
+
+                <div id="carrossel">
+                    <p class="nameRide" id="nameRide">Scooter Elétrica Voltz EV1</p>
+                    <img src="./assets/img/image3.png" alt="" id="ride">
+                    <p id="aPartir">A partir de</p>
+                    <p id="price">R$ 619,90</p>
+                    <p id="plano">Plano de 30 meses</p>
+                </div>
+
+                <button id="rightButton" onclick="rightButtonClick()"><img src="./assets/img/VectorRight.png" alt="botao para direita"></button>
+            </div>
+
+            <button id="saibaMaisButton">Saiba Mais</button>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="modal-close" id="modalClose">&#10006</span>
+                    <h2 class="nameRideModal" id="nameModalRide"></h2>
+                    <p class="textModalRide" id="textModalRide"></p>
+                    <img src="" alt="" id="rideModal">
+                    <button class="modalButton">Quero Assinar!</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="main.js"></script>
+</body>
+</html>

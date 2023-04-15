@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Parte do Header do site */
+
+body {
+    background-color: #e7e4e446;
+}
+
+header {
+    background-color: #303030;
+    display: flex;
+}
+
+header img {
+    width: 157px;
+    height: 115px;
+}
+
+header h1 {
+    width: 163px;
+    height: 56px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 48px;
+    margin-left: 31px;
+    padding-top: 30px;
+    color: #FFFFFF;
+}
+
+/* Parte do Main do site */
+
+main {
+    display: flex; 
+}
+
+/* Parte esqueda do site */
+
+.descLeft h4 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #265E70;
+    width: 640px;
+    margin-bottom: 25px;
+}
+
+.descLeft {
+    justify-content: center;
+    align-items: center;
+    margin: 78px auto;
+}
+
+.descLeft img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Parte direita do site */
+
+.descRight {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.descRight h4 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #265E70;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#carrossel {
+    width: 540px;
+    background-color: rgba(77, 188, 233, 0.75);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.carrossel {
+    display: flex;
+    height: 555px;
+}
+
+.carrossel button{
+    border: none;
+    cursor: pointer;
+    margin: auto 10px;
+}
+
+.descRight #saibaMaisButton {
+    display: flex;
+    margin: auto;
+    width: 341px;
+    height: 75px;
+    margin-top: 40px;
+}
+
+#saibaMaisButton {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    background-color: rgba(77, 188, 233, 0.75);
+    border-radius: 15px;
+    border: none;
+    color: #FFFFFF;
+    cursor:pointer;
+}
+
+/* Parte interna do carrossel */
+
+.nameRide {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 20px auto;
+}
+
+#aPartir {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    color: #FFFFFF;
+    bottom: 0;
+}
+
+#price {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    background-color: #FFFFFF;
+    color: #265E70;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    width: 210px;
+    margin: 15px auto;
+}
+
+#plano {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#carrossel img {
+    margin-bottom: auto;
+}
+
+/* Parte do Modal (parte avançada) */
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    height: 80%;
+    max-height: 1000px;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: rgba(77, 188, 233);
+    box-shadow: none;
+    border-radius: 15px;
+}
+
+.nameRideModal {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 40px auto 20px auto;
+}
+
+.textModalRide {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.modal img {
+    width: 452px;
+    margin: auto;
+}
+
+.modalButton {
+    width: 325.78px;
+    height: 66.62px;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: #265E70;
+    cursor: pointer;
+}
+
+.modal-close {
+    transform: matrix(-1, 0, 0, 1, -25, 15);
+    color: #FFFFFF;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Parte respoonsiva para Mobiles */
+
+@media screen and (max-width: 768px) {
+
+    /* Parte do Header do site */
+
+    header img {
+        width: 80px;
+        height: auto;
+    }
+
+    header h1 {
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        padding-top: 5;
+}
+
+    main {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    /* Parte esqueda (superior) do site */
+    .descLeft h4 {
+        font-size: 24px;
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .descLeft img {
+        width: 60%;
+        height: auto;
+    }
+
+    /* Parte direita (inferior) do site */
+    .descRight h4 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .nameRide {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    #aPartir {
+        font-size: 20px;
+    }
+
+    #price {
+        width: 60%;
+        font-size: 20px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    #plano {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    #carrossel {
+        width: 75%;
+        height: 450px;
+    }
+
+    .carrossel {
+        height: auto;
+    }
+
+
+    .carrossel img {
+        width: 70%;
+    }
+
+    .carrossel button{
+        margin: 10px;
+    }
+
+    #saibaMaisButton {
+        font-size: 24px;
+        display: flex;
+    }
+
+    .descRight #saibaMaisButton {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 75px;
+        margin-top: 40px;
+    }
+
+    .modal {
+        width: 100%;
+        height: auto;
+        background: #00000090;
+    }
+
+    #rideModal {
+        width: 60%;
+    }
+
+    .modal-content {
+        height: 100%;
+        font-size: 15px;
+        width: 80%;
+        height: 1000px;
+    }
+
+    .modal-content button {
+        width: 70%;
+    }
+
+    .nameRideModal {
+        font-size: 25px;
+        text-align: center;
+    }
+}
