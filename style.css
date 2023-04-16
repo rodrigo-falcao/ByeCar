@@ -46,6 +46,7 @@ main {
     text-align: center;
     color: #265E70;
     width: 640px;
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
@@ -64,6 +65,12 @@ main {
 
 /* Parte direita do site */
 
+.palavraAzul {
+    color: #4DBCE9;
+    font-weight: bold;
+}
+
+
 .descRight {
     justify-content: center;
     align-items: center;
@@ -76,7 +83,6 @@ main {
     font-weight: 400;
     font-size: 36px;
     color: #265E70;
-    margin-top: 70px;
     margin-bottom: 20px;
     text-align: center;
     padding: 10px;
@@ -346,6 +352,8 @@ main {
         height: 75px;
         margin-top: 40px;
     }
+
+    /* Parte do modal no mobile */
 
     .modal {
         width: 100%;

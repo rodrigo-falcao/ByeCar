@@ -1,3 +1,4 @@
+
 const rides = [
     {
         name: "Scooter Elétrica Voltz EV1",
@@ -14,6 +15,7 @@ const rides = [
 ];
 
 let currentIndex = 0;
+
 const nameRideElement = document.getElementById("nameRide");
 const rideElement = document.getElementById("ride");
 const priceElement = document.getElementById("price");
@@ -27,7 +29,6 @@ function updateRide() {
 
 const leftButton = document.getElementById("leftButton");
 const rightButton = document.getElementById("rightButton");
-
 
 function leftButtonClick() {
     currentIndex--;
@@ -52,13 +53,16 @@ const nameModalElement = document.getElementById("nameModalRide")
 const modal = document.getElementById("modal");
 const modalCloseButton = document.getElementById("modalClose");
 
-saibaMaisButton.addEventListener("click", () => {
+function saibaMaisButtonClick() {
     nameModalElement.innerText = rides[currentIndex].name;
     textModalRideElement.innerText = rides[currentIndex].information;
     rideModalElement.src = rides[currentIndex].img;
     modal.classList.add("active");
-  });
-  
-  modalCloseButton.addEventListener("click", () => {
+}
+
+function modalCloseButtonClick() {
     modal.classList.remove("active");
-  });
+}
+
+saibaMaisButton.addEventListener("click", saibaMaisButtonClick);
+modalCloseButton.addEventListener("click", modalCloseButtonClick);
